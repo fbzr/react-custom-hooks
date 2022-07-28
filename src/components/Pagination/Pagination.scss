@@ -1,0 +1,35 @@
+.Pagination__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .Pagination__rows-per-page-container {
+    max-height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+
+    .MuiInput-underline::before {
+      border-bottom: none;
+    }
+
+    #Pagination__rows-select {
+      margin-left: 10px;
+
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
+  }
+
+  p,
+  label {
+    font-size: 0.875rem;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+    margin: 0;
+  }
+}
