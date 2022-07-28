@@ -1,7 +1,13 @@
 import { useEffect, useState } from 'react';
 
+interface IRequestInfo {
+  loading: boolean;
+  error: any;
+  data: any;
+}
+
 export const useFetch = (url: string) => {
-  const [requestInfo, setRequestInfo] = useState({
+  const [requestInfo, setRequestInfo] = useState<IRequestInfo>({
     loading: false,
     error: null,
     data: null,
