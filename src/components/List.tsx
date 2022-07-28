@@ -1,7 +1,7 @@
-import { useFetch } from '../hooks/useFetch';
+import { useRequest } from '../hooks/useRequest';
 
 const List = () => {
-  const { data, loading, error } = useFetch(
+  const { data, loading, error } = useRequest(
     'https://jsonplaceholder.typicode.com/posts/'
   );
 

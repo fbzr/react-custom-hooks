@@ -6,7 +6,7 @@ interface IRequestInfo {
   data: any;
 }
 
-export const useFetch = (url: string) => {
+export const useRequest = (url: string) => {
   const [requestInfo, setRequestInfo] = useState<IRequestInfo>({
     loading: false,
     error: null,
