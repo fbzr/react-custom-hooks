@@ -6,7 +6,7 @@ export const useQueryAllFeatures = (
   url: string,
   queryOptions?: __esri.QueryProperties
 ) => {
-  const queryAllPlantFeatures = async (
+  const queryAllFeatures = async (
     query: __esri.Query,
     allFeatures: any[] = []
   ): Promise<any[]> => {
@@ -15,7 +15,7 @@ export const useQueryAllFeatures = (
 
     if (result.exceededTransferLimit) {
       query.start += result.features.length;
-      return await queryAllPlantFeatures(query, allFeatures);
+      return await queryAllFeatures(query, allFeatures);
     } else {
       return allFeatures;
     }
@@ -31,5 +31,5 @@ export const useQueryAllFeatures = (
     }
   );
 
-  return useAsync(() => queryAllPlantFeatures(query));
+  return useAsync(() => queryAllFeatures(query));
 };
