@@ -6,6 +6,7 @@ const WindowSize = () => {
   return (
     <div>
       <h1>WindowSize</h1>
+
       <p>Width: {width}</p>
       <p>Height: {height}</p>
     </div>
