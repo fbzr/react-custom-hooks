@@ -1,6 +1,4 @@
-import { useFetch } from '../hooks/useFetch';
 import { useQueryAllFeatures } from '../hooks/useQueryAllFeatures';
-import { usePagination } from './Pagination/usePagination';
 
 const ListAllFeatures = () => {
   const FEATURE_LAYER_URL =
